@@ -1,0 +1,13 @@
+//Base
+@import "./base/reset";
+
+//Layout
+@import "./layout/navbar";
+@import "./layout/footer";
+
+//Components
+@import "./components/dropdown";
+@import "./components/carousel";
+
+//Pages
+@import "./pages/home";

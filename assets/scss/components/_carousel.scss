@@ -1,0 +1,187 @@
+.carousel-item {
+    img {
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 500px;
+
+    }
+}
+
+.carousel-indicators {
+    background-color: transparent;
+
+    li {
+        width: 10px !important;
+        height: 10px !important;
+        background-color: red !important;
+        border-radius: 100%;
+    }
+}
+
+.carousel-content {
+    position: absolute;
+    top: 12%;
+    left: 5%;
+    height: 100%;
+    background-color: transparent;
+    text-align: center;
+
+    h1,
+    b,
+    p {
+        background-color: transparent;
+    }
+
+    h1 {
+        position: relative;
+        right: 1.5%;
+
+        b {
+            color: bisque;
+        }
+
+    }
+
+    p {
+        position: relative;
+        top: 35%;
+        left: 20%;
+        max-width: 60%;
+        color: white;
+    }
+}
+
+.bg {
+    opacity: 0.5 !important;
+}
+
+.carousel-control-prev {
+    background-color: darkred !important;
+    height: 60px !important;
+    width: 60px !important;
+    border-radius: 100%;
+    top: 40% !important;
+    left: 2% !important;
+    transition: all 0.2s ease !important;
+}
+
+.carousel-control-next {
+    background-color: darkred !important;
+    height: 60px !important;
+    width: 60px !important;
+    border-radius: 100%;
+    top: 40% !important;
+    right: 2% !important;
+    transition: all 0.2s ease !important;
+}
+
+.carousel-fade .carousel-item {
+    opacity: 0;
+    transition-duration: .7s;
+    transition-property: opacity;
+}
+
+.carousel-fade .carousel-item.active,
+.carousel-fade .carousel-item-next.carousel-item-left,
+.carousel-fade .carousel-item-prev.carousel-item-right {
+    opacity: 1;
+}
+
+.carousel-fade .active.carousel-item-left,
+.carousel-fade .active.carousel-item-right {
+    opacity: 0;
+}
+
+.carousel-fade .carousel-item-next,
+.carousel-fade .carousel-item-prev,
+.carousel-fade .carousel-item.active,
+.carousel-fade .active.carousel-item-left,
+.carousel-fade .active.carousel-item-prev {
+    transform: translateX(0);
+    transform: translate3d(0, 0, 0);
+}
+
+//Responsiveness
+@media only screen and (min-width:709px) and (max-width:889px) {
+    #marvel-universe {
+        font-size: 13px;
+    }
+
+    #marvel-reviews {
+        font-size: 15px;
+    }
+
+    #marvel-movies {
+        font-size: 14px;
+    }
+
+}
+
+@media only screen and (min-width:500px) and (max-width:709px) {
+    #marvel-universe {
+        font-size: 12px;
+    }
+
+    #marvel-reviews {
+        font-size: 14px;
+    }
+
+    #marvel-movies {
+        font-size: 12px;
+    }
+}
+
+@media only screen and (min-width:500px) and (max-width:661px) {
+    #marvel-universe {
+        font-size: 11px;
+    }
+
+    #marvel-reviews {
+        font-size: 12px;
+    }
+
+    #marvel-movies {
+        font-size: 11px;
+    }
+}
+
+@media only screen and (min-width:100px) and (max-width:500px) {
+
+    .carousel-control-prev,
+    .carousel-control-next,
+    #marvel-universe,
+    #marvel-reviews,
+    #marvel-movies {
+        display: none !important;
+    }
+
+    .carousel-content {
+        h1 {
+            display: none;
+        }
+    }
+}
+
+@media only screen and(min-width:300px) and (max-width:460px) {
+    .carousel-item {
+        img {
+            height: 300px;
+        }
+    }
+}
+
+@media only screen and(min-width:200px) and (max-width:300px) {
+    .carousel-item {
+        img {
+            height: 200px;
+        }
+    }
+}
+
+@media only screen and(min-width:100px) and (max-width:200px) {
+    .carousel-item {
+        img {
+            height: 130px;
+        }
+    }
+}

@@ -1,0 +1,59 @@
+#myNavbar {
+    background-color: #690001 !important;
+}
+
+.navbar-brand {
+    img {
+        width: 120px;
+        height: 55px;
+    }
+}
+
+#myNavLink {
+    color: whitesmoke;
+    font-size: 15px;
+    transition: all 0.25s ease;
+
+    &:hover {
+        color: red;
+        font-size: 16px;
+    }
+
+    &::after {
+        content: '';
+        display: block;
+        width: 0;
+        height: 2px;
+        background-color: red;
+        transition: width .3s;
+    }
+
+    &:hover::after {
+        width: 100%;
+    }
+
+}
+
+
+.navbar-toggler {
+    .fa-bars {
+        color: white;
+        font-size: 35px;
+    }
+}
+
+//Responsiveness
+@media only screen and (min-width:100px) and (max-width:160px) {
+    .navbar-brand {
+        img {
+            width: 80px;
+            height: 40px;
+        }
+    }
+
+    .navbar-toggler {
+        .fa-bars {
+            font-size: 30px;
+        }
+    }
+}

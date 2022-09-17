@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="icon" type="image/x-icon" href="./assets/images/marvel-favicon.jpg">
+    <title>Marvel Universe | Site for Marvel Movies,Characters,Comics,Games,Accessories</title>
+    <!-- CSS CDN -->
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Bootstrap CDN -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <!-- Slick CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css"
+        integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css"
+        integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <!-- header start -->
+    <header>
+        <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light" id="myNavbar">
+                <a class="navbar-brand" href="index.html">
+                    <img src="./assets/images/marvel-logo.png" alt="">
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+                    aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="fas fa-bars"></i>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
+                    <ul class="navbar-nav">
+                        <li class="nav-item active">
+                            <a class="nav-link" id="myNavLink" href="index.html">HOME<span class="sr-only"></span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="myNavLink" href="characters.html">CHARACTERS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="myNavLink" href="movies.html">MOVIES</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="myNavLink" href="comics.html">COMICS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="myNavLink" href="fun-facts.html">FUN FACTS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="myNavLink" href="gaming.html">GAMING</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="myNavLink" href="accessories.html">ACCESSORIES</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <!-- header end -->
+    <!-- main start -->
+    <main>
+        <!-- gaming start -->
+        <section id="gaming">
+            <div class="container">
+                <div class="gaming-summary">
+                    <div class="gaming-bg">
+                        <img src="./assets/images/gaming-bg.jpg" alt="">
+                    </div>
+                    <div class="gaming-content">
+                        <!-- <h1>WELCOME TO MARVEL'S GAMING WORLD</h1> -->
+                        <div class='console-container'><span id='text'></span>
+                            <div class='console-underscore' id='console'>&#95;</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row" style="position:relative;top:200px;row-gap: 25px;">
+                    <div class="column col-lg-4 col-md-12 col-12">
+                        <div class="card">
+                            <div class="content">
+                                <div class="front">
+                                    <img class="profile" width="100%"
+                                        src="./assets/images/game-spiderman-friend-or-foe.png"
+                                        alt="spiderman friend or foe">
+                                    <h4>Spider-Man: Friend or Foe</h4>
+                                </div>
+                                <div class="back from-left">
+                                    <h4>Spider-Man: Friend or Foe</h4>
+                                    <br>
+                                    <h6>Action-adventure, beat 'em up</h6>
+                                    <p class="des">
+                                        It features two player co-op gameplay, where one player controls Spider-Man and
+                                        another one of his allies. The storyline of the game revolves around
+                                        P.H.A.N.T.O.M.s, dangerous creatures created by mixing symbiotes with
+                                        holographic
+                                        technology, which a mysterious villain plans to use to take over the world.
+                                    </p>
+                                    <h3>10$</h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column col-lg-4 col-md-12 col-12">
+                        <div class="card">
+                            <div class="content">
+                                <div class="front">
+                                    <img class="profile" width="100%" src="./assets/images/game-deadpool.jpg"
+                                        alt="deadpool">
+                                    <h4>Deadpool</h4>
+                                </div>
+                                <div class="back from-left">
+                                    <h4>Deadpool</h4>
+                                    <br>
+                                    <h6>Action-adventure</h6>
+                                    <p class="des">Deadpool is an action hack and slash, third-person shooter video
+                                        game. Gameplay mostly consists of fighting enemies using both melee weapons and
+                                        guns, with new combos becoming available to Deadpool as he progresses through
+                                        the story and obtains upgrade points.
+                                    </p>
+                                    <h3>7$</h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column col-lg-4 col-md-12 col-12">
+                        <div class="card">
+                            <div class="content">
+                                <div class="front">
+                                    <img class="profile" width="100%" src="./assets/images/game-wolverine.jpg"
+                                        alt="x-men origins: wolverine">
+                                    <h4>X-Men Origins: Wolverine</h4>
+                                </div>
+                                <div class="back from-left">
+                                    <h4>X-Men Origins: Wolverine</h4>
+                                    <br>
+                                    <h6>Hack and slash, action-adventure, platform, fighting</h6>
+                                    <p class="des">X-Men Origins takes influences from games such as God of War and
+                                        Devil May Cry with a third person perspective. The Uncaged Edition also
+                                        features a large amount of blood and gore. Enemies can be slain in several ways
+                                        in addition to the graphic display of Wolverine's healing factor.
+                                    </p>
+                                    <h3>9$</h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column col-lg-4 col-md-12 col-12">
+                        <div class="card">
+                            <div class="content">
+                                <div class="front">
+                                    <img class="profile" width="100%" src="./assets/images/game-spidey.jpg"
+                                        alt="marvel's spiderman">
+                                    <h4>Marvel’s Spider-Man</h4>
+                                </div>
+                                <div class="back from-left">
+                                    <h4>Marvel’s Spider-Man</h4>
+                                    <br>
+                                    <h6>Action, Adventure, Casual</h6>
+                                    <p class="des">In Marvel’s Spider-Man Remastered, the worlds of Peter Parker and
+                                        Spider-Man collide in an original action-packed story.
+                                        Play as an experienced Peter Parker, fighting big crime and iconic villains in
+                                        Marvel’s New York. Web-swing through
+                                        vibrant neighborhoods and defeat villains with epic
+                                    </p>
+                                    <h3>55$</h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column col-lg-4 col-md-12 col-12">
+                        <div class="card">
+                            <div class="content">
+                                <div class="front">
+                                    <img class="profile" width="100%"
+                                        src="./assets/images/game-marvel-ultimate-alliance.png"
+                                        alt="marvel ultimate alliance">
+                                    <h4>Marvel: Ultimate Alliance</h4>
+                                </div>
+                                <div class="back from-left">
+                                    <h4>Marvel: Ultimate Alliance</h4>
+                                    <br>
+                                    <h6>Action, Adventure, RPG</h6>
+                                    <p class="des">Marvel Ultimate Alliance lets players create their ultimate team from
+                                        the largest Super Hero alliance ever as they
+                                        engage in an epic quest to determine the fate of the Marvel Universe.
+                                    </p>
+                                    <h3>7$</h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column col-lg-4 col-md-12 col-12">
+                        <div class="card">
+                            <div class="content">
+                                <div class="front">
+                                    <img class="profile" width="100%" src="./assets/images/gaming-bg.jpg"
+                                        alt="guardians of galaxy">
+                                    <h4>Guardians of the Galaxy</h4>
+                                </div>
+                                <div class="back from-left">
+                                    <h4>Marvel's Guardians of the Galaxy</h4>
+                                    <br>
+                                    <h6>Action, Adventure</h6>
+                                    <p class="des">Fire up a wild ride across the cosmos with a fresh take on Marvel’s
+                                        Guardians of the Galaxy. In this action-adventure
+                                        game, you are Star-Lord leading the unpredictable Guardians from one explosion
+                                        of chaos to the next. You got this.
+                                        Probably.
+                                    </p>
+                                    <h3>30$</h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- gaming end -->
+    </main>
+    <!-- main end -->
+    <!-- footer start -->
+    <footer>
+        <div class="row footer-row">
+            <div class="col-lg-3 footer-item">
+                <div class="marvel-info">
+                    <img src="./assets/images/marvel-logo.png" alt="">
+                    <p>Marvel Entertainment, Inc. is involved in the creation of feature films, DVD/home videos,
+                        video games, and television shows.</p>
+                </div>
+            </div>
+            <div class="col-lg-3 footer-item">
+                <div class="movie-info">
+                    <h3>Movies</h3>
+                    <ul>
+                        <li><a href="">Batman</a></li>
+                        <li><a href="">The Avengers</a></li>
+                        <li><a href="">Deadpool</a></li>
+                        <li><a href="">Iron Man</a></li>
+                        <li><a href="">Thor</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-lg-3 footer-item">
+                <div class="comics-info">
+                    <h3>Comics</h3>
+                    <ul>
+                        <li><a href="">Deadpool: Bad Blood</a></li>
+                        <li><a href="">Age of Ultron</a></li>
+                        <li><a href="">Elektra</a></li>
+                        <li><a href="">New Fantastic Four</a></li>
+                        <li><a href="">A.X.E. : Judgment Day</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-lg-3 footer-item">
+                <div class="follow-us-info">
+                    <h3>Follow Us</h3>
+                    <ul>
+                        <li><a href="https://www.facebook.com/Marvel/" target="_blank"><i
+                                    class="fa-brands fa-facebook"></i></a></li>
+                        <li><a href="https://www.instagram.com/marvel/?hl=en" target="_blank"><i
+                                    class="fa-brands fa-instagram"></i></a></li>
+                        <li><a href="https://twitter.com/Marvel?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"
+                                target="_blank"><i class="fa-brands fa-twitter"></i></a></li>
+                        <li><a href="https://www.youtube.com/c/marvel" target="_blank"><i
+                                    class="fa-brands fa-youtube"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="copyrights">
+            <p>© 2022 Copyright - Marvel Entertainment Inc. All rights reserved.</p>
+        </div>
+    </footer>
+    <!-- footer end -->
+    <button id="top"><i class="fas fa-arrow-up"></i></button>
+    <!-- scripts -->
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <!-- Slick -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"
+        integrity="sha512-HGOnQO9+SP1V92SrtZfjqxxtLmVzqZpjFFekvzZVWoiASSQgSr4cw9Kqd2+l8Llp4Gm0G8GIFJ4ddwZilcdb8A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- Axios -->
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <!-- Javascript -->
+    <script src="./assets/js/script.js" defer></script>
+</body>
+
+</html>

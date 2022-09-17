@@ -1,0 +1,2305 @@
+//Import Font
+@import url('https://fonts.googleapis.com/css2?family=Carter+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Baloo+2&display=swap');
+
+//Characters section
+.character-category {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 35%);
+    background-color: whitesmoke;
+    padding: 10px 30px;
+    border: 1px solid wheat;
+    border-radius: 50px;
+    text-align: center;
+    min-width: 30%;
+    display: flex;
+    justify-content: center;
+    z-index: 3;
+
+    ul {
+        position: relative;
+        top: 7px;
+        background-color: whitesmoke;
+        display: flex;
+        gap: 50px;
+
+        li {
+            background-color: whitesmoke;
+            list-style-type: none;
+            font-weight: bold;
+            cursor: pointer;
+            transition: all 0.3s ease;
+
+            &:hover {
+                color: red;
+            }
+        }
+    }
+
+    #all {
+        color: red;
+    }
+}
+
+.character-container {
+    padding-top: 50px;
+    text-align: center;
+
+    img {
+        height: 300px;
+        width: 100%;
+    }
+
+    h3,
+    p {
+        color: white;
+    }
+}
+
+.characters {
+    text-align: center;
+
+    h1 {
+        b {
+            color: white;
+        }
+    }
+}
+
+#hero {
+    color: green;
+}
+
+#villain {
+    color: red;
+}
+
+#characters {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 100px 0;
+}
+
+//Responsiveness
+@media only screen and (min-width:100px) and (max-width:600px) {
+    #characters {
+        padding: 30px 0;
+    }
+}
+
+@media only screen and (min-width:250px) and (max-width:315px) {
+    .characters {
+        h1 {
+            font-size: 25px;
+        }
+    }
+
+    .character-category {
+        width: 100%;
+
+        ul {
+            gap: 30px;
+            font-size: 13px;
+        }
+    }
+}
+
+@media only screen and (min-width:190px) and (max-width:250px) {
+    .characters {
+        h1 {
+            font-size: 20px;
+        }
+    }
+
+    .character-category {
+        width: 100%;
+
+        ul {
+            gap: 20px;
+            font-size: 10px;
+        }
+    }
+}
+
+@media only screen and (min-width:150px) and (max-width:190px) {
+    .characters {
+        h1 {
+            font-size: 14px;
+        }
+    }
+
+    .character-category {
+        width: 100%;
+
+        ul {
+            gap: 12px;
+            font-size: 8px;
+        }
+    }
+}
+
+@media only screen and (min-width:100px) and (max-width:170px) {
+    .characters {
+        h1 {
+            font-size: 14px;
+        }
+    }
+
+    .character-category {
+        width: 100%;
+
+        ul {
+            gap: 10px;
+            font-size: 7px;
+        }
+    }
+
+    .character-container {
+        img {
+            height: 150px;
+        }
+
+        h3 {
+            font-size: 20px;
+        }
+
+        #hero,
+        #villain {
+            font-size: 13px;
+        }
+
+        :nth-child(4) {
+            font-size: 10px;
+        }
+    }
+}
+
+@media only screen and (min-width:100px) and (max-width:135px) {
+    .characters {
+
+        display: none;
+
+    }
+
+    .character-category {
+        display: none;
+    }
+
+    #characters {
+        padding: 0;
+    }
+
+    .character-container {
+        h3 {
+            font-size: 16px;
+        }
+    }
+}
+
+@media only screen and (min-width:50px) and (max-width:130px) {
+    .navbar-brand {
+        img {
+            width: 60px;
+            height: 30px;
+        }
+    }
+
+    .navbar-toggler {
+        .fa-bars {
+            font-size: 25px;
+        }
+    }
+
+    .carousel-item {
+        img {
+            height: 200px;
+        }
+    }
+}
+
+@media only screen and(min-width:100px) and (max-width:300px) {
+    .character-container {
+        img {
+            height: 200px;
+        }
+    }
+
+    .navbar-brand {
+        img {
+            width: 80px;
+            height: 35px;
+        }
+    }
+}
+
+@media only screen and(min-width:100px) and (max-width:120px) {
+    .navbar-brand {
+        img {
+            width: 60px;
+            height: 25px;
+        }
+
+    }
+}
+
+@media only screen and(min-width:100px) and (max-width:180px) {
+    .character-container {
+        img {
+            height: 150px;
+        }
+    }
+
+}
+
+@media only screen and(min-width:170px) and (max-width:270px) {
+    .character-container {
+        h3 {
+            font-size: 20px;
+        }
+
+        #hero,
+        #villain {
+            font-size: 13px;
+        }
+
+        :nth-child(4) {
+            font-size: 12px;
+        }
+
+        img {
+            height: 150px;
+        }
+    }
+
+}
+
+@media only screen and(min-width:100px) and (max-width:170px) {
+    .character-container {
+        :nth-child(4) {
+            font-size: 9px;
+        }
+    }
+
+}
+
+//Movies section
+#movie {
+    display: flex;
+    gap: 20px;
+    justify-content: space-evenly;
+
+    .card-img-top {
+        height: 430px;
+    }
+
+    .card-body,
+    .card-title,
+    .card-text {
+        background: whitesmoke;
+    }
+
+    .card-title {
+        color: #005555;
+        font-weight: bold;
+    }
+
+    .card-text {
+        color: #421413;
+        font-size: 14px;
+    }
+}
+
+.jumbotron {
+    background-image: url(/assets/images/searchbg.jpg) !important;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 30px !important;
+
+    h3 {
+        background: transparent;
+    }
+
+    #searchForm {
+        input {
+            border: 1px solid red;
+
+            &:focus {
+                box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+            }
+        }
+    }
+}
+
+//Responsiveness
+@media only screen and(min-width:450px) and (max-width:500px) {
+    .jumbotron {
+        h3 {
+            font-size: 22px !important;
+        }
+    }
+}
+
+@media only screen and(min-width:350px) and (max-width:450px) {
+    .jumbotron {
+        h3 {
+            font-size: 17px !important;
+        }
+    }
+
+    #searchForm {
+        input {
+            font-size: 14px;
+        }
+    }
+}
+
+@media only screen and(min-width:300px) and (max-width:350px) {
+    .jumbotron {
+        h3 {
+            font-size: 14px !important;
+        }
+    }
+
+    #searchForm {
+        input {
+            font-size: 12px;
+        }
+    }
+}
+
+@media only screen and(min-width:200px) and (max-width:300px) {
+    .jumbotron {
+        h3 {
+            font-size: 12px !important;
+        }
+    }
+
+    #searchForm {
+        input {
+            font-size: 10px;
+        }
+    }
+}
+
+@media only screen and(min-width:100px) and (max-width:202px) {
+    .jumbotron {
+        h3 {
+            font-size: 10px !important;
+        }
+    }
+
+    #searchForm {
+        input {
+            font-size: 7px;
+        }
+    }
+}
+
+@media only screen and(min-width:160px) and (max-width:179px) {
+    .jumbotron {
+        h3 {
+            font-size: 8px !important;
+        }
+    }
+}
+
+@media only screen and(min-width:145px) and (max-width:160px) {
+    .jumbotron {
+        h3 {
+            font-size: 7px !important;
+        }
+    }
+
+    #searchForm {
+        input {
+            font-size: 6px;
+        }
+    }
+}
+
+@media only screen and(min-width:100px) and (max-width:145px) {
+
+    #searchForm {
+        input {
+            font-size: 6px;
+        }
+    }
+}
+
+@media only screen and(min-width:100px) and (max-width:238px) {
+    .card-body {
+
+        #favourites,
+        #buy {
+            width: 100%;
+            margin-top: 5px;
+        }
+    }
+}
+
+@media only screen and(min-width:232px) and (max-width:280px) {
+    .card-body {
+        .card-title {
+            font-size: 16px;
+        }
+
+        .card-text {
+            font-size: 12px;
+        }
+
+        #favourites,
+        #buy {
+            font-size: 14px;
+        }
+    }
+}
+
+@media only screen and(min-width:100px) and (max-width:232px) {
+    .card-body {
+        .card-title {
+            font-size: 13px !important;
+        }
+
+        .card-text {
+            font-size: 10px !important;
+        }
+
+        #favourites,
+        #buy {
+            font-size: 12px;
+        }
+    }
+}
+
+@media only screen and(min-width:100px) and (max-width:195px) {
+    .card-body {
+        .card-text {
+            font-size: 9px !important;
+        }
+
+        #favourites,
+        #buy {
+            font-size: 12px;
+        }
+    }
+}
+
+@media only screen and(min-width:131px) and (max-width:153px) {
+    .card-body {
+        .card-text {
+            font-size: 8px !important;
+        }
+
+        #favourites,
+        #buy {
+            font-size: 9px !important;
+        }
+    }
+}
+
+@media only screen and(min-width:117px) and (max-width:131px) {
+    .card-body {
+
+        #favourites,
+        #buy {
+            font-size: 7px !important;
+        }
+    }
+}
+
+@media only screen and(min-width:100px) and (max-width:117px) {
+    .card-body {
+        .card-title {
+            font-size: 10px !important;
+        }
+
+        #favourites,
+        #buy {
+            font-size: 6px !important;
+        }
+    }
+}
+
+//Back to Top button
+#top {
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    bottom: 10px;
+    right: 20px;
+    z-index: 99;
+    background: gray;
+    opacity: 0.7;
+    border: none;
+    outline: none;
+    border-radius: 15px;
+    font-size: 18px;
+    transition: all 0.2s ease;
+    cursor: pointer;
+
+    &:hover {
+        background-color: #8a2123;
+    }
+
+    i {
+        background: transparent;
+        font-size: 22px;
+        color: white;
+    }
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+//Fun Facts section
+#fun-facts {
+    .fun-facts-summary {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 100px;
+
+        // border: 1px solid black;
+        h1,
+        span {
+            background: transparent;
+            color: white;
+            font-family: 'Carter One', cursive;
+        }
+
+        h1 {
+            span {
+                color: red;
+            }
+        }
+    }
+
+    .fun-facts-item {
+        img {
+            width: 350px;
+            height: 220px;
+        }
+
+        p {
+            padding: 12px 0;
+            text-align: center;
+            color: white;
+        }
+    }
+}
+
+//Responsiveness
+@media only screen and(min-width:768px) and (max-width:992px) {
+    #fun-facts {
+        .fun-facts-item {
+            p {
+                font-size: 13px;
+            }
+        }
+    }
+}
+
+@media only screen and(min-width:480px) and (max-width:767px) {
+    #fun-facts {
+        .fun-facts-item {
+            p {
+                font-size: 12px;
+                text-align: left;
+            }
+        }
+    }
+}
+
+@media only screen and(min-width:240px) and (max-width:479px) {
+    #fun-facts {
+        .fun-facts-item {
+            img {
+                width: 100%;
+            }
+
+            p {
+                font-size: 12px;
+                text-align: center;
+            }
+        }
+    }
+}
+
+@media only screen and(min-width:150px) and (max-width:240px) {
+    #fun-facts {
+        .fun-facts-item {
+            img {
+                width: 100%;
+                height: 180px;
+            }
+
+            p {
+                font-size: 10px;
+                text-align: center;
+            }
+        }
+    }
+}
+
+@media only screen and (min-width:100px) and (max-width:600px) {
+    #fun-facts {
+        .fun-facts-summary {
+            padding: 30px;
+        }
+    }
+}
+
+@media only screen and (min-width:100px) and (max-width:120px) {
+    #fun-facts {
+        .fun-facts-summary {
+            padding: 20px;
+
+            h1 {
+                font-size: 20px;
+            }
+        }
+    }
+}
+
+@media only screen and (min-width:210px) and (max-width:293px) {
+    #fun-facts {
+        .fun-facts-summary {
+            h1 {
+                font-size: 25px;
+            }
+        }
+    }
+}
+
+@media only screen and (min-width:100px) and (max-width:218px) {
+    #fun-facts {
+        .fun-facts-summary {
+            h1 {
+                font-size: 14px;
+            }
+        }
+    }
+}
+
+@media only screen and (min-width:141px) and (max-width:160px) {
+    #fun-facts {
+        .fun-facts-summary {
+            h1 {
+                font-size: 10px;
+            }
+        }
+    }
+}
+
+@media only screen and (min-width:100px) and (max-width:141px) {
+    #fun-facts {
+        .fun-facts-summary {
+            h1 {
+                font-size: 8px;
+            }
+        }
+    }
+}
+
+@media only screen and (min-width:130px) and (max-width:150px) {
+    #fun-facts {
+        .fun-facts-item {
+            p {
+                font-size: 10px;
+            }
+        }
+    }
+}
+
+@media only screen and (min-width:100px) and (max-width:130px) {
+    #fun-facts {
+        .fun-facts-item {
+            p {
+                font-size: 7px;
+            }
+        }
+    }
+}
+
+@media only screen and (min-width:768px) and (max-width:992px) {
+    #fun-facts {
+        .fun-facts-item {
+            img {
+                width: 100%;
+                height: 200px;
+            }
+        }
+    }
+}
+
+@media only screen and (min-width:480px) and (max-width:767px) {
+    #fun-facts {
+        .fun-facts-item {
+            img {
+                width: 100%;
+                height: 150px;
+            }
+        }
+    }
+}
+
+@media only screen and (min-width:100px) and (max-width:200px) {
+    #fun-facts {
+        .fun-facts-item {
+            img {
+                width: 100%;
+                height: 100px;
+            }
+        }
+    }
+}
+
+@media only screen and (min-width:200px) and (max-width:239px) {
+    .slick-dots {
+        li {
+            width: 15px !important;
+        }
+    }
+}
+
+@media only screen and (min-width:160px) and (max-width:200px) {
+    .slick-dots {
+        li {
+            width: 10px !important;
+        }
+    }
+}
+
+@media only screen and (min-width:160px) and (max-width:167px) {
+    .slick-dots {
+        width: 95%;
+
+        li {
+            width: 8px !important;
+        }
+    }
+}
+
+@media only screen and (min-width:100px) and (max-width:159px) {
+    .slick-dots {
+        width: 90% !important;
+
+        li {
+            width: 6px !important;
+        }
+    }
+}
+
+//Statistics section
+#statistics {
+    background-color: #8a2123;
+    padding: 50px;
+    margin-top: 100px;
+
+    .statistics-container {
+        display: flex;
+        justify-content: space-evenly;
+        background: #8a2123;
+
+        .statistics-row {
+            width: 100%;
+        }
+
+        .statistics-item,
+        h1,
+        span {
+            background: #8a2123;
+        }
+
+        .statistics-item {
+            text-align: center;
+
+            .fa-heart,
+            .fa-comment-dots,
+            .fa-credit-card {
+                background: transparent;
+                font-size: 120px;
+                color: rgb(126, 10, 7);
+                color: linear-gradient(90deg, rgba(126, 10, 7, 1) 0%, rgba(255, 0, 0, 1) 50%, rgba(126, 10, 7, 1) 100%);
+            }
+
+            h1 {
+                margin-top: 10px;
+                font-size: 18px;
+                color: white;
+            }
+
+            span {
+                font-size: 120px;
+            }
+        }
+
+    }
+
+    #likes,
+    #comments,
+    #purchases {
+        font-size: 50px;
+        color: yellow;
+    }
+}
+
+//Responsiveness
+@media only screen and (min-width:100px) and (max-width:991px) {
+    .statistics-row {
+        gap: 50px;
+        background: transparent;
+    }
+}
+
+@media only screen and (min-width:250px) and (max-width:300px) {
+    .statistics-item {
+        .fa-solid {
+            font-size: 80px !important;
+        }
+
+        h1 {
+            font-size: 15px !important;
+        }
+
+        span {
+            font-size: 50px !important;
+        }
+    }
+}
+
+@media only screen and (min-width:214px) and (max-width:250px) {
+    .statistics-item {
+        .fa-solid {
+            font-size: 35px !important;
+        }
+
+        h1 {
+            font-size: 10px !important;
+        }
+
+        span {
+            font-size: 25px !important;
+        }
+    }
+}
+
+@media only screen and (min-width:100px) and (max-width:214px) {
+    .statistics-item {
+        .fa-solid {
+            font-size: 30px !important;
+        }
+
+        h1 {
+            font-size: 8px !important;
+        }
+
+        span {
+            font-size: 25px !important;
+        }
+    }
+}
+
+@media only screen and (min-width:100px) and (max-width:900px) {
+    #statistics {
+        padding: 10px;
+    }
+}
+
+@media only screen and (min-width:100px) and (max-width:130px) {
+    #statistics {
+        padding: 0px;
+    }
+}
+
+//Comics Section
+#comics {
+    .container {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        padding: 30px;
+
+        .comics-summary {
+            width: 100%;
+
+            img {
+                background-size: cover;
+                background-repeat: no-repeat;
+                height: 500px;
+                width: 100%;
+            }
+
+            .dark-bg {
+                background: grey;
+                opacity: 0.5;
+            }
+
+            .comics-content {
+                text-align: center;
+                border-radius: 1px solid black;
+                border-bottom-left-radius: 20px;
+                border-bottom-right-radius: 20px;
+                background: white;
+                padding: 20px;
+                transition: all 0.3s ease;
+
+                &:hover {
+                    background: darkred;
+                    box-shadow: 0 5px 20px rgba(148, 7, 7, 0.822);
+
+                    h1,
+                    p {
+                        color: white;
+                    }
+                }
+
+                h1,
+                p {
+                    color: black;
+                    background: transparent;
+                }
+            }
+        }
+    }
+
+    .card-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 100px;
+    }
+
+    .card {
+        position: relative;
+        max-width: 300px;
+        height: 215px;
+        background: #fff;
+        margin: 30px 10px;
+        padding: 20px 24px;
+        display: flex;
+        flex-direction: column;
+        box-shadow: 0 5px 202px rgba(0, 0, 0, 0.5);
+        transition: 0.3s ease-in-out;
+
+        &:hover {
+            height: 420px;
+        }
+
+        &:hover .content {
+            visibility: visible;
+            opacity: 1;
+            margin-top: -40px;
+            transition-delay: 0.3s;
+        }
+
+        .image-box {
+            background: transparent;
+            position: relative;
+            width: 250px;
+            height: 250px;
+            top: -60px;
+            z-index: 1;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+
+            img {
+                max-width: 100%;
+                border-radius: 4px;
+                position: relative;
+                left: 15%;
+                height: 200px;
+                width: 70%;
+            }
+        }
+
+        .content {
+            position: relative;
+            margin-top: -140px;
+            padding: 10px 15px;
+            text-align: center;
+            background: transparent;
+            color: #111;
+            visibility: hidden;
+            opacity: 0;
+            transition: 0.3s ease-in-out;
+
+            h3 {
+                font-size: 22px;
+            }
+
+            p {
+                font-size: 16px;
+            }
+
+            h3,
+            p {
+                background: transparent;
+            }
+
+            button {
+                background: whitesmoke;
+                border: 1px solid darkslategray;
+                border-radius: 14px;
+                padding: 10px 20px;
+                transition: all 0.3s ease;
+
+                a {
+                    text-decoration: none;
+                    color: black;
+                }
+
+                &:hover {
+                    background: darkred;
+                    border: 1px solid darkred;
+
+                    a {
+                        color: white;
+                    }
+                }
+            }
+        }
+    }
+
+    #see-more {
+        position: relative;
+        top: 50px;
+        background: darkgray;
+        border: 1px solid darkgray;
+        border-radius: 14px;
+        padding: 15px 30px;
+        transition: all 0.3s ease;
+
+        a {
+            text-decoration: none;
+            color: black;
+        }
+
+        &:hover {
+            background: yellow;
+            border: 1px solid yellow;
+
+            a {
+                color: white;
+            }
+        }
+    }
+}
+
+//Responsiveness
+@media only screen and (min-width:440px) and (max-width:767px) {
+    #comics {
+        .container {
+            .comics-summary {
+                img {
+                    height: 350px;
+                }
+            }
+        }
+    }
+
+    .comics-content {
+        h1 {
+            font-size: 1.7rem;
+        }
+
+        p {
+
+            font-size: 15px;
+        }
+    }
+}
+
+@media only screen and (min-width:350px) and (max-width:440px) {
+    #comics {
+        .container {
+            .comics-summary {
+                img {
+                    height: 250px;
+                }
+            }
+        }
+    }
+
+    .comics-content {
+        h1 {
+            font-size: 1.5rem;
+        }
+
+        p {
+
+            font-size: 12px;
+        }
+    }
+}
+
+@media only screen and (min-width:100px) and (max-width:350px) {
+    #comics {
+        .container {
+            .comics-summary {
+                img {
+                    display: none;
+                }
+            }
+        }
+    }
+
+    .comics-content {
+        h1 {
+            font-size: 1.5rem;
+        }
+
+        p {
+            display: none;
+        }
+    }
+}
+
+@media only screen and (min-width:170px) and (max-width:220px) {
+
+    .comics-content {
+        h1 {
+            font-size: 1.2rem;
+        }
+    }
+}
+
+@media only screen and (min-width:132px) and (max-width:170px) {
+
+    .comics-content {
+        h1 {
+            font-size: .6rem;
+        }
+    }
+}
+
+@media only screen and (min-width:100px) and (max-width:132px) {
+
+    .comics-content {
+        height: 60px;
+        width: 60px;
+
+        h1 {
+            font-size: .4rem;
+        }
+    }
+}
+
+@media only screen and (min-width:992px) and (max-width:1199px) {
+    #comics {
+        .card {
+            .image-box {
+                img {
+                    left: 7%;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (min-width:768px) and (max-width:991px) {
+    #comics {
+        .card-container {
+            .row {
+                .col-lg-4 {
+                    left: 25%;
+                    width: max-content;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (min-width:451px) and (max-width:767px) {
+    #comics {
+        .card-container {
+            .row {
+                .col-lg-4 {
+                    left: 17%;
+                    width: max-content;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (min-width:150px) and (max-width:450px) {
+    #comics {
+        .card-container {
+            .row {
+                .col-lg-4 {
+                    left: 20%;
+                    width: max-content;
+                }
+            }
+        }
+
+        .card {
+            .content {
+                h3 {
+                    font-size: 17px;
+                }
+
+                p {
+                    font-size: 13px;
+                }
+
+                button {
+                    font-size: 12px;
+                }
+            }
+
+            max-width: 200px;
+
+            .image-box {
+                width: 175px;
+                height: 209px;
+                left: -12px;
+
+                img {
+                    max-width: 65%;
+                    left: 20%;
+                    height: 115px;
+                    width: 58%;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (min-width:325px) and (max-width:380px) {
+    #comics {
+        .card-container {
+            .row {
+                .col-lg-4 {
+                    left: 14%;
+                    width: max-content;
+                }
+            }
+        }
+
+        #see-more {
+            font-size: 12px;
+        }
+
+    }
+}
+
+@media only screen and (min-width:280px) and (max-width:325px) {
+    #comics {
+        .card-container {
+            .row {
+                .col-lg-4 {
+                    left: 5%;
+                    width: max-content;
+                }
+            }
+        }
+
+        #see-more {
+            font-size: 12px;
+            left: -15px;
+        }
+
+    }
+}
+
+@media only screen and (min-width:250px) and (max-width:280px) {
+    #comics {
+        .card-container {
+            .row {
+                .col-lg-4 {
+                    left: 0;
+                    width: max-content;
+                }
+            }
+        }
+
+        #see-more {
+            font-size: 12px;
+            left: -3px;
+        }
+
+    }
+}
+
+@media only screen and (min-width:220px) and (max-width:250px) {
+    #comics {
+        .card-container {
+            .row {
+                .col-lg-4 {
+                    left: -2%;
+                    width: max-content;
+                }
+            }
+        }
+
+        .card {
+            .content {
+                h3 {
+                    font-size: 14px;
+                }
+
+                p {
+                    font-size: 11px;
+                }
+
+                button {
+                    font-size: 7px;
+                }
+            }
+
+            max-width: 166px;
+
+            .image-box {
+                width: 140px;
+                height: 170px;
+                left: -12px;
+
+                img {
+                    max-width: 65%;
+                    left: 20%;
+                    height: 100px;
+                    width: 60%;
+                }
+            }
+        }
+
+        #see-more {
+            font-size: 7px;
+            left: -3px;
+        }
+    }
+}
+
+@media only screen and (min-width:150px) and (max-width:220px) {
+    #comics {
+        .card-container {
+            .row {
+                .col-lg-4 {
+                    left: -2%;
+                    width: max-content;
+                }
+            }
+        }
+
+        .card {
+            .content {
+                h3 {
+                    font-size: 14px;
+                }
+
+                p {
+                    font-size: 11px;
+                }
+
+                button {
+                    font-size: 7px;
+                }
+            }
+
+            max-width: 166px;
+
+            .image-box {
+                width: 140px;
+                height: 170px;
+                left: -12px;
+
+                img {
+                    max-width: 65%;
+                    left: 20%;
+                    height: 100px;
+                    width: 60%;
+                }
+            }
+        }
+
+        #see-more {
+            font-size: 7px;
+            left: -3px;
+        }
+    }
+}
+
+//Gaming section
+#gaming {
+    padding-bottom: 300px;
+
+    .gaming-summary {
+        position: relative;
+        text-align: center;
+        color: white;
+        top: 100px;
+
+        .gaming-bg {
+            background: gray;
+            opacity: 0.5;
+
+            img {
+                width: 100%;
+            }
+        }
+    }
+
+    .gaming-content {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background: transparent;
+        width: 100%;
+
+        h1,
+        p {
+            background: transparent;
+        }
+
+        .hidden {
+            opacity: 0;
+        }
+
+        #text {
+            background: transparent;
+            font-family: 'Baloo 2', cursive;
+        }
+
+        .console-container {
+            font-size: 4em;
+            text-align: center;
+            height: 200px;
+            background: transparent !important;
+            width: 62%;
+            display: block;
+            position: absolute;
+            color: white;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: auto;
+        }
+
+        .console-underscore {
+            display: inline-block;
+            position: relative;
+            left: 10px;
+            background: transparent;
+        }
+    }
+
+    .column {
+        float: left;
+        width: 33.33%;
+        padding: 0 10px;
+    }
+
+    .content {
+        background: white;
+    }
+
+    .front {
+        background: white;
+
+        img {
+            height: 350px;
+        }
+
+        h4 {
+            padding: 20px 0;
+        }
+
+        .profile,
+        h4,
+        h6 {
+            background: white;
+        }
+    }
+
+    .back {
+
+        h4,
+        h3,
+        h6,
+        img,
+        p,
+        ul,
+        li {
+            background: transparent;
+        }
+
+    }
+
+    /* Responsive */
+    @media screen and (max-width: 700px) {
+
+        .container {
+            width: 100%;
+        }
+
+        .column {
+            width: 100%;
+            display: block;
+            margin-bottom: 20px;
+        }
+    }
+
+    .card {
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        text-align: center;
+        background-color: #fff;
+        cursor: pointer;
+    }
+
+    .card {
+        .profile {
+            transition: 0.2s;
+        }
+
+        &:hover {
+            .content {
+                .from-left {
+                    left: 0%;
+                }
+            }
+        }
+
+        &:hover .profile {
+            transform: scale(1.4);
+            border-top-right-radius: 50px;
+            border-top-left-radius: 50px;
+        }
+
+        .content {
+            width: 100%;
+            height: 100%;
+            position: relative;
+            overflow: hidden;
+
+            .back {
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                background-color: #f1f1f1e6;
+                transition: 1s;
+                z-index: 1;
+                padding: 60px 10px;
+
+                h3 {
+                    font-size: 45px;
+                }
+
+                .des {
+                    font-size: 13px;
+                    padding: 20px 0px;
+                }
+            }
+        }
+    }
+
+    .from-left {
+        top: 0;
+        left: -100%;
+    }
+
+    #see-more {
+        position: relative;
+        top: 50px;
+        left: 45%;
+        background: darkgray;
+        border: 1px solid darkgray;
+        border-radius: 14px;
+        padding: 15px 30px;
+        transition: all 0.3s ease;
+
+        a {
+            text-decoration: none;
+            color: black;
+        }
+
+        &:hover {
+            background: yellow;
+            border: 1px solid yellow;
+
+            a {
+                color: white;
+            }
+        }
+    }
+}
+
+//Responsiveness
+
+@media only screen and (min-width:768px) and (max-width:991px) {
+    #gaming {
+        .gaming-content {
+            #text {
+                font-size: 40px;
+            }
+        }
+
+        .row {
+            gap: 50px;
+        }
+    }
+}
+
+@media only screen and (min-width:400px) and (max-width:767px) {
+    #gaming {
+        .gaming-content {
+            #text {
+                font-size: 25px;
+            }
+        }
+
+        .row {
+            gap: 50px;
+        }
+    }
+}
+
+@media only screen and (min-width:300px) and (max-width:400px) {
+    #gaming {
+        .gaming-content {
+            #text {
+                font-size: 15px;
+            }
+
+            .console-underscore {
+                font-size: 20px;
+            }
+        }
+
+        .row {
+            gap: 50px;
+        }
+    }
+}
+
+@media only screen and (min-width:200px) and (max-width:300px) {
+    #gaming {
+        .front {
+            h4 {
+                font-size: 1rem;
+            }
+
+            .orofile {
+                height: 300px;
+            }
+        }
+
+        .card {
+            .content {
+                .back {
+                    h3 {
+                        font-size: 35px;
+                    }
+
+                    h4 {
+                        font-size: 20px;
+                    }
+
+                    h6 {
+                        font-size: 10px;
+                    }
+
+                    .des {
+                        font-size: 11px;
+                    }
+                }
+            }
+        }
+
+        .gaming-content {
+            #text {
+                font-size: 8px;
+            }
+
+            .console-underscore {
+                font-size: 15px;
+            }
+        }
+
+        .row {
+            gap: 50px;
+        }
+    }
+}
+
+@media only screen and (min-width:400px) and (max-width:767px) {
+    #gaming {
+        #see-more {
+            left: 40%;
+        }
+    }
+}
+
+@media only screen and (min-width:300px) and (max-width:400px) {
+    #gaming {
+        #see-more {
+            left: 30%;
+        }
+    }
+}
+
+@media only screen and (min-width:200px) and (max-width:300px) {
+    #gaming {
+        #see-more {
+            left: 25%;
+        }
+    }
+}
+
+@media only screen and (min-width:100px) and (max-width:250px) {
+    #gaming {
+        .front {
+            .profile {
+                height: 200px;
+            }
+        }
+
+        .back {
+
+            .des {
+                display: none;
+            }
+
+            h3 {
+                font-size: 30px;
+            }
+        }
+
+        #see-more {
+            left: 20%;
+            font-size: 12px;
+        }
+    }
+}
+
+
+@media only screen and (min-width:100px) and (max-width:200px) {
+    #gaming {
+        #see-more {
+            left: 10%;
+        }
+
+        .front {
+            h4 {
+                font-size: 12px;
+            }
+        }
+
+        .back {
+            h4 {
+                font-size: 12px;
+            }
+
+            h6 {
+                font-size: 10px;
+            }
+
+            h3 {
+                font-size: 25px !important;
+            }
+        }
+
+        .gaming-bg {
+            img {
+                height: 150px;
+            }
+        }
+
+        .gaming-content {
+
+            #text,
+            .console-underscore {
+                font-size: 7px;
+            }
+        }
+
+        .row {
+            gap: 50px;
+        }
+    }
+}
+
+
+//Accessories section
+#accessories {
+    .accessories-summary {
+        text-align: center;
+
+        h3 {
+            padding: 45px 0;
+            border: 1px solid black;
+            border-radius: 20px;
+            color: white;
+            background: black;
+            transition: all 0.6s ease;
+
+            &:hover {
+                background: white;
+                color: black;
+                border: 1px solid white;
+                transform: scale(.9);
+            }
+        }
+    }
+
+    .accessory-item {
+        margin-top: 50px;
+    }
+
+    .box2 {
+        max-height: 350px;
+        height: 350px;
+        background-color: #eeeeee;
+        background-size: cover;
+        background-position: center center;
+        transition: all 0.5s ease-in-out;
+        display: flex;
+        align-content: center;
+        justify-content: center;
+
+        .hover {
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            opacity: 0;
+            display: flex;
+            justify-content: center;
+            flex-flow: column;
+            transition: all 0.5s ease-in-out;
+            padding: 2em 2em;
+
+            h1,
+            p,
+            span {
+                background: transparent;
+            }
+
+            #discount {
+                text-decoration: line-through;
+                color: red;
+            }
+
+            #price {
+                font-weight: bold;
+                color: whitesmoke;
+                position: relative;
+                left: 15px;
+            }
+
+            #discount,
+            #price {
+                font-size: 30px;
+            }
+
+            h1 {
+                color: #ffffff;
+                font-size: 1.8em;
+                text-transform: uppercase;
+                font-family: "Patua One", cursive;
+            }
+
+            p {
+                color: #ffffff;
+            }
+        }
+
+        &:hover {
+            .hover {
+                opacity: 1;
+                cursor: pointer;
+            }
+        }
+    }
+}
+
+//Responsiveness
+@media only screen and (min-width:500px) and (max-width:766px) {
+    #accessories {
+        .accessories-summary {
+            h3 {
+                font-size: 18px;
+            }
+        }
+    }
+}
+
+@media only screen and (min-width:380px) and (max-width:500px) {
+    #accessories {
+        .accessories-summary {
+            h3 {
+                font-size: 14px;
+            }
+        }
+    }
+}
+
+@media only screen and (min-width:200px) and (max-width:380px) {
+    #accessories {
+        .accessories-summary {
+            h3 {
+                font-size: 10px;
+            }
+        }
+    }
+}
+
+@media only screen and (min-width:225px) and (max-width:300px) {
+    #accessories {
+        .box2 {
+            height: 225px;
+
+            .hover {
+                h1 {
+                    font-size: 1.2rem;
+                }
+
+                #discount {
+                    font-size: 20px;
+                }
+
+                #price {
+                    font-size: 20px;
+                }
+
+            }
+        }
+    }
+}
+
+@media only screen and (min-width:100px) and (max-width:225px) {
+    #accessories {
+        .container {
+            padding: 0;
+        }
+
+        .row {
+            margin: 0;
+        }
+
+        .box2 {
+            height: 180px;
+
+            .hover {
+                h1 {
+                    font-size: .8rem;
+                }
+
+                #discount {
+                    font-size: 15px;
+                }
+
+                #price {
+                    font-size: 15px;
+                }
+
+            }
+        }
+    }
+}
+
+//Peoples thoughts section
+#peoples-thoughts {
+    .people-thoughts-summary {
+        // background: yellow;
+        display: flex;
+        justify-content: center;
+        color: white;
+        padding: 70px 0;
+
+        h1 {
+            font-size: 50px;
+        }
+    }
+
+    h3,
+    h5 {
+        color: #262626;
+        font-size: 20px;
+        line-height: 24px;
+        font-weight: 700;
+        margin-bottom: 4px;
+    }
+
+    h5 {
+        font-size: 14px;
+        font-weight: 100;
+    }
+
+    p {
+        font-size: 17px;
+        font-weight: 400;
+        line-height: 20px;
+        color: #666666;
+
+        &.small {
+            font-size: 14px;
+        }
+    }
+
+    .card1 {
+        display: block;
+        position: relative;
+        background-color: #f2f8f9;
+        border-radius: 4px;
+        padding: 32px 24px;
+        margin: 12px;
+        text-decoration: none;
+        z-index: 0;
+        overflow: hidden;
+        width: 100%;
+
+        h3,
+        h5,
+        p,
+        i {
+            background: transparent;
+        }
+    }
+
+}
+
+//Responsiveness
+@media only screen and (min-width:100px) and (max-width:300px) {
+    #peoples-thoughts {
+        .card1 {
+            h1 {
+                font-size: 13px;
+            }
+        }
+    }
+}
+
+@media only screen and (min-width:770px) and (max-width:991px) {
+    #peoples-thoughts {
+        .people-thoughts-summary {
+            h1 {
+                font-size: 30px;
+            }
+        }
+    }
+}
+
+@media only screen and (min-width:400px) and (max-width:770px) {
+    #peoples-thoughts {
+        .people-thoughts-summary {
+            h1 {
+                font-size: 20px;
+            }
+        }
+    }
+}
+
+@media only screen and (min-width:300px) and (max-width:400px) {
+    #peoples-thoughts {
+        .people-thoughts-summary {
+            h1 {
+                font-size: 12px;
+            }
+        }
+    }
+}
+
+@media only screen and (min-width:100px) and (max-width:300px) {
+    #peoples-thoughts {
+        .people-thoughts-summary {
+            h1 {
+                display: none;
+            }
+        }
+    }
+}
+
+//Footer
+footer {
+    background: darkslategray;
+    height: 400px;
+    width: 100%;
+    padding: 50px 0;
+
+    .movie-info {
+        background: darkslategray;
+
+        h3,
+        ul,
+        li,
+        a {
+            background: darkslategray;
+        }
+
+        ul {
+            li {
+                padding: 7px 3px;
+                list-style-type: none;
+
+                a {
+                    text-decoration: none;
+                    color: white;
+                    transition: all 0.3s ease;
+
+                    &:hover {
+                        color: darkred;
+                    }
+                }
+            }
+        }
+    }
+
+    .comics-info {
+        background: darkslategray;
+
+        h3,
+        ul,
+        li,
+        a {
+            background: darkslategray;
+        }
+
+        ul {
+            li {
+                padding: 7px 3px;
+                list-style-type: none;
+
+                a {
+                    text-decoration: none;
+                    color: white;
+                    transition: all 0.3s ease;
+
+                    &:hover {
+                        color: darkred;
+                    }
+
+                }
+            }
+        }
+    }
+
+    .follow-us-info {
+        background: darkslategray;
+
+        h3,
+        ul,
+        li,
+        a {
+            background: darkslategray;
+        }
+
+        ul {
+            display: flex;
+            gap: 20px;
+
+            li {
+                list-style-type: none;
+
+                a {
+                    text-decoration: none;
+                    color: white;
+
+                    i {
+                        background: transparent;
+                        font-size: 22px;
+                        color: white;
+                        padding: 10px 5px;
+                        border-radius: 20px;
+                        transition: all .3s ease;
+                    }
+
+                    .fa-facebook {
+                        &:hover {
+                            color: #4267B2;
+                        }
+                    }
+
+                    .fa-instagram {
+                        &:hover {
+                            color: #C13584;
+                        }
+                    }
+
+                    .fa-twitter {
+                        &:hover {
+                            color: #1DA1F2;
+                        }
+                    }
+
+                    .fa-youtube {
+                        &:hover {
+                            color: #FF0000;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .footer-row {
+        margin-right: 0;
+        padding: 0 40px;
+    }
+
+    .footer-row,
+    .footer-item {
+        background: darkslategray;
+    }
+
+    .marvel-info {
+        background: darkslategray;
+
+        p {
+            background: darkslategray;
+            color: white;
+            font-size: 12px;
+            position: relative;
+            top: 7px;
+        }
+
+        img {
+            width: 200px;
+            height: 100px;
+        }
+    }
+
+    .copyrights {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: #690001;
+        position: relative;
+        margin-top: 30px;
+        height: 75px;
+
+        p {
+            background: #690001;
+            color: white;
+            text-align: center;
+        }
+    }
+}
+
+//Responsiveness
+@media only screen and (min-width:200px) and (max-width:400px) {
+    footer {
+        .copyrights {
+            p {
+                font-size: 12px;
+            }
+        }
+    }
+}
+
+@media only screen and (min-width:100px) and (max-width:240px) {
+    footer {
+        .marvel-info {
+            img {
+                width: 150px;
+                height: 70px;
+            }
+        }
+    }
+}
